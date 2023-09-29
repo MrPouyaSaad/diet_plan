@@ -19,9 +19,12 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.deepPurple,
           primary: primaryColor,
+          onPrimary: onPrimary,
           secondary: secondryColor,
           surface: textColor,
-          onSurface: secondryTextColor,
+          secondaryContainer: secondryColor,
+          onSurface: Colors.white,
+          onBackground: Colors.white,
         ),
         useMaterial3: true,
       ),
