@@ -1,3 +1,4 @@
+import 'package:diet_plan/common/theme.dart';
 import 'package:diet_plan/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -12,9 +13,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Diet Plan App',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        fontFamily: 'Journal',
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.deepPurple,
+          primary: primaryColor,
+          secondary: secondryColor,
+          surface: textColor,
+          onSurface: secondryTextColor,
+        ),
         useMaterial3: true,
       ),
       home: const HomeScreen(),
