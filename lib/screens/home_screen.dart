@@ -1,4 +1,5 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'package:diet_plan/screens/plan_selection.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -252,7 +253,14 @@ class _HomeScreenState extends State<HomeScreen> {
                   ).marginOnly(top: 32, right: 32, bottom: 0),
                   Center(
                     child: FloatingActionButton.extended(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          CupertinoPageRoute(
+                            builder: (context) => PlanSelectScreen(),
+                          ),
+                        );
+                      },
                       backgroundColor: themeData.colorScheme.secondary,
                       label: Text(
                         'Show My Plans',
