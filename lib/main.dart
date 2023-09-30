@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Diet Plan App',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         fontFamily: 'Journal',
         colorScheme: ColorScheme.fromSeed(
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
           onPrimary: onPrimary,
           secondary: secondryColor,
           surface: textColor,
-          secondaryContainer: secondryColor,
+          secondaryContainer: secondryTextColor,
           onSurface: Colors.white,
           onBackground: Colors.white,
         ),
